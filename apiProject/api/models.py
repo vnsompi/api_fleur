@@ -57,10 +57,6 @@ class Product(models.Model):
             super().save(*args, **kwargs)
 
         
-
-
-    
-
 class Cart(models.Model):
     customer = models.ForeignKey(CustomerUser, on_delete=models.CASCADE,  null=True, blank=True)
     cart_code  = models.IntegerField()
